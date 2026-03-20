@@ -1,516 +1,1672 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kiran Veernapu | AI Leader in Healthcare Systems</title>
-  <meta name="description" content="Kiran Veernapu is an AI and healthcare technology leader specializing in clinical decision intelligence, enterprise analytics, and digital transformation." />
-  <style>
-    :root {
-      --bg: #f7f9fc;
-      --surface: #ffffff;
-      --text: #1b2430;
-      --muted: #5c6773;
-      --line: #d9e1ea;
-      --accent: #8c1515;
-      --accent-dark: #6d0f0f;
-      --max: 1100px;
-      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      --radius: 18px;
-    }
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
 
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiran Veernapu — Healthcare AI & Engineering Leader</title>
+<meta name="description" content="Kiran Veernapu is an Engineering Delivery Manager at Intermountain Health, specializing in AI-driven clinical decision support, healthcare analytics, and enterprise digital transformation.">
+<meta property="og:title" content="Kiran Veernapu — Healthcare AI & Engineering Leader">
+<meta property="og:description" content="25+ years building AI systems that improve patient outcomes. Engineering Delivery Manager at Intermountain Health.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kiranveernapu.com">
+<meta name="robots" content="index, follow">
 
-    .container {
-      width: min(calc(100% - 32px), var(--max));
-      margin: 0 auto;
-    }
+<!-- Fonts: Instrument Serif (display) + General Sans (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600&display=swap" rel="stylesheet">
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(247, 249, 252, 0.95);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line);
-    }
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kiran Veernapu",
+  "jobTitle": "Engineering Delivery Manager",
+  "worksFor": {"@type": "Organization", "name": "Intermountain Health"},
+  "url": "https://kiranveernapu.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/kiran-veernapu-871a757/",
+    "https://scholar.google.com/citations?user=wdrRBhYAAAAJ"
+  ],
+  "creator": {"@type": "SoftwareApplication", "name": "Perplexity Computer", "url": "https://www.perplexity.ai/computer"}
+}
+</script>
 
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 14px 0;
-    }
+<style>
+/* ===== DESIGN TOKENS ===== */
+:root {
+  --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
+  --text-sm:   clamp(0.875rem, 0.8rem  + 0.35vw, 1rem);
+  --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
+  --text-lg:   clamp(1.125rem, 1rem    + 0.75vw, 1.5rem);
+  --text-xl:   clamp(1.5rem,   1.2rem  + 1.25vw, 2.25rem);
+  --text-2xl:  clamp(2rem,     1.2rem  + 2.5vw,  3.5rem);
+  --text-3xl:  clamp(2.5rem,   1rem    + 4vw,    5rem);
+  --text-hero: clamp(3rem,     0.5rem  + 7vw,    8rem);
 
-    .brand {
-      font-weight: 700;
-      font-size: 1.05rem;
-      letter-spacing: 0.2px;
-    }
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+  --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+  --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem; --space-32: 8rem;
 
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      font-size: 0.96rem;
-    }
+  --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem;
+  --radius-xl: 1rem; --radius-full: 9999px;
+  --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --content-narrow: 640px; --content-default: 960px; --content-wide: 1200px;
 
-    .hero {
-      padding: 72px 0 42px;
-    }
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'General Sans', 'Helvetica Neue', sans-serif;
+}
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.6fr 0.9fr;
-      gap: 36px;
-      align-items: center;
-    }
+/* DARK MODE — primary palette */
+:root, [data-theme="dark"] {
+  --color-bg:              #0d1117;
+  --color-surface:         #161b22;
+  --color-surface-2:       #1c2230;
+  --color-surface-offset:  #1a2033;
+  --color-surface-dynamic: #222d3d;
+  --color-divider:         #21283a;
+  --color-border:          #2d3748;
 
-    .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: var(--accent);
-      font-size: 0.82rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
+  --color-text:            #e8edf5;
+  --color-text-muted:      #8892a4;
+  --color-text-faint:      #4a5568;
+  --color-text-inverse:    #0d1117;
 
-    h1 {
-      font-size: clamp(2.2rem, 4vw, 4rem);
-      line-height: 1.08;
-      margin: 0 0 16px;
-      letter-spacing: -0.02em;
-    }
+  /* Teal accent — healthcare, precision */
+  --color-primary:         #38b2ac;
+  --color-primary-hover:   #2c9a94;
+  --color-primary-active:  #22797e;
+  --color-primary-highlight: #1a3040;
 
-    .subtitle {
-      font-size: 1.18rem;
-      color: var(--muted);
-      margin-bottom: 22px;
-      max-width: 760px;
-    }
+  /* Gold — awards, excellence */
+  --color-gold:            #f6c90e;
+  --color-gold-muted:      #a8860a;
 
-    .hero-card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-      padding: 18px;
-    }
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
+}
 
-    .photo {
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      border-radius: 18px;
-      object-fit: cover;
-      background: linear-gradient(135deg, #d8dee8, #eef2f7);
-      display: block;
-    }
+/* LIGHT MODE */
+[data-theme="light"] {
+  --color-bg:              #f8fafc;
+  --color-surface:         #ffffff;
+  --color-surface-2:       #f1f5f9;
+  --color-surface-offset:  #e8f0fe;
+  --color-surface-dynamic: #dde9f5;
+  --color-divider:         #e2e8f0;
+  --color-border:          #cbd5e1;
 
-    .photo-note {
-      color: var(--muted);
-      font-size: 0.92rem;
-      margin-top: 10px;
-      text-align: center;
-    }
+  --color-text:            #0f172a;
+  --color-text-muted:      #475569;
+  --color-text-faint:      #94a3b8;
+  --color-text-inverse:    #f8fafc;
 
-    .button-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
-    }
+  --color-primary:         #0d7377;
+  --color-primary-hover:   #0a5f63;
+  --color-primary-active:  #084b4f;
+  --color-primary-highlight: #d1f0ee;
 
-    .btn {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 999px;
-      border: 1px solid var(--accent);
-      font-size: 0.96rem;
-      font-weight: 700;
-      transition: 0.2s ease;
-    }
+  --color-gold:            #b7800a;
+  --color-gold-muted:      #a87106;
 
-    .btn.primary {
-      background: var(--accent);
-      color: white;
-    }
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.14);
+}
 
-    .btn.primary:hover {
-      background: var(--accent-dark);
-      text-decoration: none;
-    }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --color-bg: #f8fafc; --color-surface: #ffffff; --color-surface-2: #f1f5f9;
+    --color-surface-offset: #e8f0fe; --color-surface-dynamic: #dde9f5;
+    --color-divider: #e2e8f0; --color-border: #cbd5e1;
+    --color-text: #0f172a; --color-text-muted: #475569; --color-text-faint: #94a3b8;
+    --color-text-inverse: #f8fafc;
+    --color-primary: #0d7377; --color-primary-hover: #0a5f63;
+    --color-primary-active: #084b4f; --color-primary-highlight: #d1f0ee;
+    --color-gold: #b7800a; --color-gold-muted: #a87106;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.14);
+  }
+}
 
-    .btn.secondary {
-      color: var(--accent);
-      background: transparent;
-    }
+/* ===== BASE RESET ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--space-20);
+}
+body {
+  min-height: 100dvh;
+  line-height: 1.6;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+img, video { display: block; max-width: 100%; height: auto; }
+ul[role="list"], ol[role="list"] { list-style: none; }
+input, button, textarea, select { font: inherit; color: inherit; }
+h1, h2, h3, h4 { text-wrap: balance; line-height: 1.2; }
+p, li { text-wrap: pretty; max-width: 72ch; }
+button { cursor: pointer; background: none; border: none; }
+a { color: inherit; text-decoration: none; }
+::selection { background: var(--color-primary-highlight); color: var(--color-text); }
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+a, button, [role="button"] { transition: color var(--transition-interactive), background var(--transition-interactive), border-color var(--transition-interactive), box-shadow var(--transition-interactive), opacity var(--transition-interactive); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
 
-    .btn.secondary:hover {
-      background: #fff5f5;
-      text-decoration: none;
-    }
+/* ===== LAYOUT ===== */
+.container { max-width: var(--content-wide); margin: 0 auto; padding: 0 var(--space-6); }
+.container--default { max-width: var(--content-default); }
+section { padding-block: clamp(var(--space-16), 8vw, var(--space-32)); }
 
-    .section {
-      padding: 32px 0;
-    }
+/* ===== NAVIGATION ===== */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: color-mix(in srgb, var(--color-bg) 85%, transparent);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-divider);
+  transition: box-shadow 0.3s ease;
+}
+.nav.scrolled { box-shadow: var(--shadow-md); }
+.nav__inner {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-block: var(--space-4);
+  max-width: var(--content-wide); margin: 0 auto; padding-inline: var(--space-6);
+}
+.nav__logo {
+  display: flex; align-items: center; gap: var(--space-3);
+}
+.nav__logo-text {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+.nav__logo-text span { color: var(--color-primary); }
+.nav__links {
+  display: flex; align-items: center; gap: var(--space-8); list-style: none;
+}
+.nav__links a {
+  font-size: var(--text-sm); font-weight: 500; color: var(--color-text-muted);
+  letter-spacing: 0.02em; text-transform: uppercase;
+}
+.nav__links a:hover { color: var(--color-primary); }
+.nav__actions { display: flex; align-items: center; gap: var(--space-4); }
+.btn-theme {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px;
+  color: var(--color-text-muted); border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+}
+.btn-theme:hover { color: var(--color-text); border-color: var(--color-primary); }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  padding: var(--space-2) var(--space-5);
+  background: var(--color-primary); color: var(--color-text-inverse);
+  font-size: var(--text-sm); font-weight: 600; border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+.btn-primary:hover { background: var(--color-primary-hover); }
+.nav__mobile-toggle { display: none; padding: var(--space-2); color: var(--color-text-muted); }
+.nav__mobile-menu {
+  display: none; flex-direction: column; gap: var(--space-4);
+  padding: var(--space-4) var(--space-6); border-top: 1px solid var(--color-divider);
+}
+.nav__mobile-menu.open { display: flex; }
+.nav__mobile-menu a { font-size: var(--text-base); color: var(--color-text-muted); font-weight: 500; }
+.nav__mobile-menu a:hover { color: var(--color-primary); }
 
-    .section-title {
-      font-size: 1.7rem;
-      margin: 0 0 14px;
-    }
+@media (max-width: 768px) {
+  .nav__links, .nav__actions .btn-primary { display: none; }
+  .nav__mobile-toggle { display: flex; align-items: center; }
+}
 
-    .section-intro {
-      color: var(--muted);
-      max-width: 760px;
-      margin-bottom: 22px;
-    }
+/* ===== HERO ===== */
+.hero {
+  position: relative; overflow: hidden;
+  min-height: 100vh; display: flex; align-items: center;
+  padding-block: clamp(var(--space-20), 10vw, var(--space-32));
+}
+.hero__bg {
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 40%, color-mix(in srgb, var(--color-primary) 10%, transparent) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, color-mix(in srgb, var(--color-primary) 6%, transparent) 0%, transparent 50%);
+}
+.hero__grid-lines {
+  position: absolute; inset: 0; z-index: 0; opacity: 0.04;
+  background-image:
+    linear-gradient(var(--color-primary) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-primary) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero__content {
+  position: relative; z-index: 1;
+  max-width: var(--content-wide); margin: 0 auto; padding-inline: var(--space-6);
+  display: grid; grid-template-columns: 1fr 400px; gap: var(--space-16); align-items: center;
+}
+.hero__eyebrow {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--color-primary); margin-bottom: var(--space-6);
+  padding: var(--space-2) var(--space-4); border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+  border-radius: var(--radius-full); width: fit-content;
+}
+.hero__eyebrow-dot {
+  width: 6px; height: 6px; border-radius: 50%; background: var(--color-primary);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+.hero__heading {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 400; line-height: 1.1; letter-spacing: -0.02em;
+  color: var(--color-text); margin-bottom: var(--space-6);
+}
+.hero__heading em { font-style: italic; color: var(--color-primary); }
+.hero__bio {
+  font-size: var(--text-base); color: var(--color-text-muted); line-height: 1.7;
+  max-width: 54ch; margin-bottom: var(--space-8);
+}
+.hero__cta { display: flex; gap: var(--space-4); flex-wrap: wrap; margin-bottom: var(--space-10); }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  padding: var(--space-2) var(--space-5);
+  border: 1px solid var(--color-border); color: var(--color-text-muted);
+  font-size: var(--text-sm); font-weight: 500; border-radius: var(--radius-full);
+}
+.btn-outline:hover { border-color: var(--color-primary); color: var(--color-primary); }
+.hero__social { display: flex; gap: var(--space-4); }
+.hero__social a {
+  display: flex; align-items: center; gap: var(--space-2);
+  font-size: var(--text-xs); color: var(--color-text-faint); font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.hero__social a:hover { color: var(--color-primary); }
+.hero__card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-lg);
+}
+.hero__avatar {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), color-mix(in srgb, var(--color-primary) 60%, var(--color-bg)));
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: var(--space-5);
+  font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-text-inverse);
+  font-weight: 400;
+}
+.hero__card-name { font-family: var(--font-display); font-size: var(--text-lg); margin-bottom: var(--space-1); }
+.hero__card-title { font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-6); }
+.hero__card-stats { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-bottom: var(--space-6); }
+.hero__stat {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-2);
+  border-radius: var(--radius-md); text-align: center;
+}
+.hero__stat-num {
+  font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-primary);
+  line-height: 1; margin-bottom: var(--space-1);
+}
+.hero__stat-label { font-size: var(--text-xs); color: var(--color-text-muted); line-height: 1.3; }
+.hero__badges { display: flex; flex-direction: column; gap: var(--space-2); }
+.hero__badge {
+  display: flex; align-items: center; gap: var(--space-3);
+  padding: var(--space-2) var(--space-3); border-radius: var(--radius-md);
+  background: var(--color-surface-2);
+  font-size: var(--text-xs); color: var(--color-text-muted);
+}
+.hero__badge-icon { color: var(--color-primary); flex-shrink: 0; }
 
-    .metrics {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
+@media (max-width: 900px) {
+  .hero__content { grid-template-columns: 1fr; }
+  .hero__card { max-width: 400px; }
+}
+@media (max-width: 480px) {
+  .hero__heading { font-size: var(--text-2xl); }
+}
 
-    .metric {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 26px;
-      box-shadow: var(--shadow);
-    }
+/* ===== SECTION HEADERS ===== */
+.section-header { margin-bottom: clamp(var(--space-10), 4vw, var(--space-16)); }
+.section-label {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--color-primary); margin-bottom: var(--space-4);
+}
+.section-label::before { content: ''; display: block; width: 20px; height: 1px; background: var(--color-primary); }
+.section-title {
+  font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 400;
+  letter-spacing: -0.02em; color: var(--color-text); line-height: 1.15;
+}
+.section-title em { font-style: italic; color: var(--color-primary); }
+.section-desc {
+  margin-top: var(--space-4); font-size: var(--text-base);
+  color: var(--color-text-muted); max-width: 60ch;
+}
 
-    .metric .value {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--accent);
-      line-height: 1.1;
-      margin-bottom: 8px;
-    }
+/* ===== IMPACT STRIP ===== */
+.impact-strip {
+  background: var(--color-surface); border-top: 1px solid var(--color-divider);
+  border-bottom: 1px solid var(--color-divider); padding-block: var(--space-12);
+}
+.impact-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-8);
+}
+.impact-item { text-align: center; padding: var(--space-4); }
+.impact-num {
+  font-family: var(--font-display); font-size: var(--text-3xl); color: var(--color-primary);
+  line-height: 1; margin-bottom: var(--space-2); font-weight: 400;
+}
+.impact-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.4; }
+.impact-divider {
+  width: 1px; background: var(--color-border);
+  grid-row: 1; align-self: stretch; margin-block: var(--space-4);
+}
+@media (max-width: 640px) {
+  .impact-grid { grid-template-columns: repeat(2, 1fr); }
+  .impact-divider { display: none; }
+}
 
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
+/* ===== ABOUT ===== */
+.about { background: var(--color-bg); }
+.about__grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(var(--space-12), 6vw, var(--space-20));
+  align-items: start;
+}
+.about__body { font-size: var(--text-base); color: var(--color-text-muted); line-height: 1.75; }
+.about__body p + p { margin-top: var(--space-5); }
+.about__skills { margin-top: var(--space-8); }
+.about__skills-title { font-size: var(--text-sm); font-weight: 600; color: var(--color-text); margin-bottom: var(--space-4); letter-spacing: 0.06em; text-transform: uppercase; }
+.skills-grid { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.skill-tag {
+  padding: var(--space-1) var(--space-3); font-size: var(--text-xs); font-weight: 500;
+  background: var(--color-surface-2); border: 1px solid var(--color-border);
+  border-radius: var(--radius-full); color: var(--color-text-muted);
+  transition: all var(--transition-interactive);
+}
+.skill-tag:hover { border-color: var(--color-primary); color: var(--color-primary); }
+.about__sidebar {}
+.about__edu-card, .about__role-card {
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-5);
+}
+.about__card-label { font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-primary); margin-bottom: var(--space-4); }
+.edu-item, .role-item { display: flex; gap: var(--space-4); padding-block: var(--space-3); border-top: 1px solid var(--color-divider); }
+.edu-item:first-of-type, .role-item:first-of-type { border-top: none; padding-top: 0; }
+.edu-icon {
+  width: 36px; height: 36px; border-radius: var(--radius-md); background: var(--color-primary-highlight);
+  flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  color: var(--color-primary); font-size: var(--text-sm);
+}
+.edu-content { flex: 1; }
+.edu-degree { font-size: var(--text-sm); font-weight: 600; color: var(--color-text); line-height: 1.3; }
+.edu-school { font-size: var(--text-xs); color: var(--color-text-muted); margin-top: var(--space-1); }
+.edu-year { font-size: var(--text-xs); color: var(--color-primary); font-weight: 500; margin-top: var(--space-1); }
 
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 26px;
-      box-shadow: var(--shadow);
-    }
+@media (max-width: 768px) {
+  .about__grid { grid-template-columns: 1fr; }
+}
 
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 1.18rem;
-    }
+/* ===== PROJECTS ===== */
+.projects { background: var(--color-surface); }
+.projects-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
+}
+.project-card {
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg); padding: var(--space-6); overflow: hidden;
+  transition: transform var(--transition-interactive), box-shadow var(--transition-interactive), border-color var(--transition-interactive);
+  display: flex; flex-direction: column;
+}
+.project-card:hover {
+  transform: translateY(-3px); box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+.project-card--featured {
+  grid-column: span 2;
+  background: linear-gradient(135deg, var(--color-surface-2), var(--color-bg));
+}
+.project-icon {
+  width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--color-primary-highlight);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--color-primary); margin-bottom: var(--space-5);
+}
+.project-tag {
+  display: inline-flex; padding: var(--space-1) var(--space-2);
+  font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  background: var(--color-primary-highlight); color: var(--color-primary);
+  border-radius: var(--radius-sm); margin-bottom: var(--space-4); width: fit-content;
+}
+.project-title {
+  font-family: var(--font-display); font-size: var(--text-lg); font-weight: 400;
+  color: var(--color-text); margin-bottom: var(--space-3); line-height: 1.3;
+}
+.project-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; flex: 1; }
+.project-impact {
+  margin-top: var(--space-5); padding-top: var(--space-4); border-top: 1px solid var(--color-divider);
+  display: flex; gap: var(--space-4); flex-wrap: wrap;
+}
+.impact-badge {
+  display: flex; align-items: center; gap: var(--space-1);
+  font-size: var(--text-xs); font-weight: 600; color: var(--color-primary);
+}
+.impact-badge-label { font-weight: 400; color: var(--color-text-muted); }
 
-    ul.clean {
-      margin: 0;
-      padding-left: 20px;
-    }
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card--featured { grid-column: span 1; }
+}
 
-    .highlight-list li,
-    .clean li { margin-bottom: 8px; }
+/* ===== PUBLICATIONS ===== */
+.publications { background: var(--color-bg); }
+.pub-filter {
+  display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-10);
+}
+.pub-filter-btn {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  border: 1px solid var(--color-border); border-radius: var(--radius-full);
+  color: var(--color-text-muted); cursor: pointer; background: transparent;
+  transition: all var(--transition-interactive);
+}
+.pub-filter-btn:hover, .pub-filter-btn.active {
+  background: var(--color-primary); color: var(--color-text-inverse); border-color: var(--color-primary);
+}
+.pub-list { display: flex; flex-direction: column; gap: var(--space-4); }
+.pub-item {
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg); padding: var(--space-5) var(--space-6);
+  display: grid; grid-template-columns: auto 1fr auto;
+  gap: var(--space-5); align-items: start;
+  transition: border-color var(--transition-interactive), box-shadow var(--transition-interactive);
+}
+.pub-item:hover { border-color: var(--color-primary); box-shadow: var(--shadow-sm); }
+.pub-year {
+  font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-primary);
+  font-weight: 400; line-height: 1; padding-top: var(--space-1); min-width: 60px;
+}
+.pub-content { flex: 1; }
+.pub-type {
+  display: inline-flex; padding: 2px var(--space-2);
+  font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  border-radius: var(--radius-sm); margin-bottom: var(--space-2); width: fit-content;
+}
+.pub-type--journal { background: var(--color-primary-highlight); color: var(--color-primary); }
+.pub-type--conference { background: color-mix(in srgb, var(--color-gold) 15%, transparent); color: var(--color-gold); }
+.pub-type--book { background: color-mix(in srgb, #7c3aed 15%, transparent); color: #9d6bf5; }
+[data-theme="light"] .pub-type--book { color: #6d28d9; }
+.pub-title {
+  font-size: var(--text-base); font-weight: 500; color: var(--color-text); line-height: 1.45;
+  margin-bottom: var(--space-2);
+}
+.pub-journal { font-size: var(--text-sm); color: var(--color-text-muted); }
+.pub-authors { font-size: var(--text-xs); color: var(--color-text-faint); margin-top: var(--space-1); }
+.pub-link {
+  display: flex; align-items: center; gap: var(--space-1);
+  font-size: var(--text-xs); color: var(--color-primary); white-space: nowrap; padding-top: var(--space-1);
+}
+.pub-link:hover { text-decoration: underline; }
+.pub-hidden { display: none; }
+.pub-show-more {
+  margin-top: var(--space-6); text-align: center;
+}
+.btn-ghost {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--text-sm); font-weight: 600; color: var(--color-primary);
+  border: 1px solid var(--color-primary); border-radius: var(--radius-full);
+  background: transparent;
+}
+.btn-ghost:hover { background: var(--color-primary-highlight); }
 
-    .experience-role {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
+@media (max-width: 640px) {
+  .pub-item { grid-template-columns: 1fr; gap: var(--space-2); }
+  .pub-year { font-size: var(--text-base); }
+}
 
-    .org {
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
+/* ===== AWARDS ===== */
+.awards { background: var(--color-surface); }
+.awards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+.award-card {
+  background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+  padding: var(--space-6); display: flex; gap: var(--space-5); align-items: flex-start;
+  transition: transform var(--transition-interactive), border-color var(--transition-interactive);
+}
+.award-card:hover { transform: translateY(-2px); border-color: var(--color-gold-muted); }
+.award-icon {
+  width: 48px; height: 48px; border-radius: var(--radius-md); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 22px;
+  background: color-mix(in srgb, var(--color-gold) 12%, transparent);
+}
+.award-content {}
+.award-name { font-size: var(--text-base); font-weight: 600; color: var(--color-text); margin-bottom: var(--space-1); }
+.award-org { font-size: var(--text-sm); color: var(--color-primary); font-weight: 500; margin-bottom: var(--space-2); }
+.award-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.55; }
+.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); margin-top: var(--space-10); }
+.service-card {
+  background: var(--color-surface-2); border: 1px solid var(--color-divider);
+  border-radius: var(--radius-md); padding: var(--space-4);
+}
+.service-role { font-size: var(--text-sm); font-weight: 600; color: var(--color-text); margin-bottom: var(--space-1); }
+.service-org { font-size: var(--text-xs); color: var(--color-primary); }
+.service-year { font-size: var(--text-xs); color: var(--color-text-faint); margin-top: var(--space-1); }
 
-    .media-list,
-    .link-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px 18px;
-      padding: 0;
-      list-style: none;
-      margin: 0;
-    }
+@media (max-width: 768px) {
+  .awards-grid { grid-template-columns: 1fr; }
+  .service-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .service-grid { grid-template-columns: 1fr; }
+}
 
-    .media-list li,
-    .link-list li {
-      background: #ffffff;
-      border: 1px solid var(--line);
-      padding: 10px 14px;
-      border-radius: 999px;
-    }
+/* ===== MEDIA ===== */
+.media-section { background: var(--color-bg); }
+.media-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); }
+.media-card {
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg); padding: var(--space-5);
+  display: flex; flex-direction: column; gap: var(--space-3);
+  transition: transform var(--transition-interactive), border-color var(--transition-interactive);
+}
+.media-card:hover { transform: translateY(-3px); border-color: var(--color-primary); }
+.media-outlet {
+  font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--color-primary);
+}
+.media-headline {
+  font-size: var(--text-sm); font-weight: 600; color: var(--color-text);
+  line-height: 1.4; flex: 1;
+}
+.media-link {
+  display: inline-flex; align-items: center; gap: var(--space-1);
+  font-size: var(--text-xs); color: var(--color-text-muted); font-weight: 500;
+}
+.media-link:hover { color: var(--color-primary); }
 
-    .contact-box {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 18px;
-    }
+@media (max-width: 768px) { .media-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .media-grid { grid-template-columns: 1fr; } }
 
-    footer {
-      padding: 32px 0 50px;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
+/* ===== CONTACT ===== */
+.contact { background: var(--color-surface); }
+.contact__grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(var(--space-12), 6vw, var(--space-20)); }
+.contact__info {}
+.contact__info p { font-size: var(--text-base); color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-8); }
+.contact-links { display: flex; flex-direction: column; gap: var(--space-4); }
+.contact-link {
+  display: flex; align-items: center; gap: var(--space-4);
+  padding: var(--space-4) var(--space-5); background: var(--color-bg);
+  border: 1px solid var(--color-border); border-radius: var(--radius-md);
+}
+.contact-link:hover { border-color: var(--color-primary); }
+.contact-link-icon {
+  width: 40px; height: 40px; border-radius: var(--radius-md);
+  background: var(--color-primary-highlight); color: var(--color-primary);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.contact-link-label { font-size: var(--text-xs); color: var(--color-text-faint); margin-bottom: 2px; }
+.contact-link-value { font-size: var(--text-sm); font-weight: 500; color: var(--color-text); }
+.contact__form { display: flex; flex-direction: column; gap: var(--space-5); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); }
+.form-group { display: flex; flex-direction: column; gap: var(--space-2); }
+.form-label { font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-text-muted); }
+.form-input, .form-textarea {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); font-size: var(--text-sm); color: var(--color-text);
+  font-family: var(--font-body); transition: border-color var(--transition-interactive);
+}
+.form-input:focus, .form-textarea:focus { outline: none; border-color: var(--color-primary); }
+.form-input::placeholder, .form-textarea::placeholder { color: var(--color-text-faint); }
+.form-textarea { resize: vertical; min-height: 140px; }
+.form-select-group { display: flex; flex-direction: column; gap: var(--space-2); }
+.form-select {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); font-size: var(--text-sm); color: var(--color-text);
+  font-family: var(--font-body); appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238892a4' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 12px center;
+}
+.form-select:focus { outline: none; border-color: var(--color-primary); }
+.form-submit {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-3);
+  padding: var(--space-4) var(--space-8);
+  background: var(--color-primary); color: var(--color-text-inverse);
+  font-size: var(--text-sm); font-weight: 600; border-radius: var(--radius-full);
+  border: none; cursor: pointer; transition: background var(--transition-interactive);
+}
+.form-submit:hover { background: var(--color-primary-hover); }
+#form-success {
+  display: none; padding: var(--space-4); background: color-mix(in srgb, var(--color-primary) 12%, transparent);
+  border: 1px solid var(--color-primary); border-radius: var(--radius-md);
+  font-size: var(--text-sm); color: var(--color-primary); font-weight: 500; text-align: center;
+}
 
-    @media (max-width: 900px) {
-      .hero-grid,
-      .grid-2,
-      .contact-box,
-      .metrics {
-        grid-template-columns: 1fr;
-      }
+@media (max-width: 768px) {
+  .contact__grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+}
 
-      .hero {
-        padding-top: 48px;
-      }
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--color-bg); border-top: 1px solid var(--color-divider);
+  padding-block: var(--space-10);
+}
+.footer__inner {
+  max-width: var(--content-wide); margin: 0 auto; padding-inline: var(--space-6);
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);
+}
+.footer__copy { font-size: var(--text-xs); color: var(--color-text-faint); }
+.footer__links { display: flex; gap: var(--space-6); }
+.footer__links a { font-size: var(--text-xs); color: var(--color-text-faint); }
+.footer__links a:hover { color: var(--color-primary); }
+.footer__attribution { font-size: var(--text-xs); color: var(--color-text-faint); }
+.footer__attribution a { color: var(--color-primary); }
+.footer__attribution a:hover { text-decoration: underline; }
 
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
+/* ===== SCROLL ANIMATIONS ===== */
+.fade-in {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.fade-in-delay-1 { transition-delay: 0.1s; }
+.fade-in-delay-2 { transition-delay: 0.2s; }
+.fade-in-delay-3 { transition-delay: 0.3s; }
+
+/* ===== DIVIDER ===== */
+hr.section-rule { border: none; border-top: 1px solid var(--color-divider); margin: 0; }
+
+/* ===== KEYNOTE BADGE ===== */
+.keynote-strip {
+  background: linear-gradient(135deg, var(--color-primary-highlight), color-mix(in srgb, var(--color-primary) 8%, var(--color-bg)));
+  border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+  border-radius: var(--radius-lg); padding: var(--space-5) var(--space-6);
+  display: flex; align-items: center; gap: var(--space-4); margin-top: var(--space-8);
+}
+.keynote-icon { color: var(--color-primary); flex-shrink: 0; }
+.keynote-text { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.5; }
+.keynote-text strong { color: var(--color-text); display: block; margin-bottom: 2px; }
+</style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand">Kiran Veernapu</div>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#recognition">Recognition</a>
-        <a href="#media">Media</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
+<!-- ===== NAVIGATION ===== -->
+<header class="nav" id="nav">
+  <nav class="nav__inner">
+    <div class="nav__logo">
+      <!-- Custom SVG Logo: KV monogram -->
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-label="Kiran Veernapu logo" xmlns="http://www.w3.org/2000/svg">
+        <rect width="36" height="36" rx="8" fill="var(--color-primary)"/>
+        <path d="M9 10L9 26M9 18L17 10M9 18L18 26" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21 10L26 18L21 26" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <span class="nav__logo-text">Kiran <span>Veernapu</span></span>
+    </div>
+    <ul class="nav__links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="btn-theme" data-theme-toggle aria-label="Switch to light mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="#contact" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Connect
+      </a>
+      <button class="nav__mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile-menu" id="mobile-menu">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#awards">Awards</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<main>
+<section class="hero" id="home" aria-label="Introduction">
+  <div class="hero__bg"></div>
+  <div class="hero__grid-lines" aria-hidden="true"></div>
+  <div class="hero__content">
+    <div>
+      <div class="hero__eyebrow">
+        <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+        Engineering Delivery Manager · Intermountain Health
+      </div>
+      <h1 class="hero__heading">
+        Building <em>AI systems</em> that transform how healthcare works
+      </h1>
+      <p class="hero__bio">
+        25+ years architecting data-driven solutions across healthcare, clinical decision support, and enterprise AI. Translating advanced machine learning into measurable outcomes for patients, clinicians, and operations.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>
+          View Projects
+        </a>
+        <a href="https://kiranveernapu.com/KiranVeernapu%20Resume.pdf" target="_blank" rel="noopener" class="btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Download CV
+        </a>
+      </div>
+      <div class="hero__social">
+        <a href="https://www.linkedin.com/in/kiran-veernapu-871a757/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://scholar.google.com/citations?hl=en&user=wdrRBhYAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5L12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+          Scholar
+        </a>
+        <a href="https://www.researchgate.net/profile/Kiran-Veernapu?ev=prf_overview" target="_blank" rel="noopener" aria-label="ResearchGate">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a12.193 12.193 0 0 0-.507 2.944c-.139 1.399-.17 2.61-.09 3.637.082 1.04.27 1.896.565 2.567.295.67.745 1.19 1.348 1.553.604.368 1.4.55 2.393.55 1.037 0 1.869-.172 2.49-.52.623-.348 1.05-.847 1.278-1.5.23-.653.346-1.46.346-2.424v-.354H19.26v.354c0 .538-.072 1.012-.213 1.42-.141.406-.386.69-.734.85-.35.16-.807.24-1.373.24-.618 0-1.1-.128-1.447-.384-.347-.254-.584-.686-.712-1.293-.128-.608-.192-1.441-.192-2.502 0-1.063.064-1.9.192-2.505.128-.605.365-1.033.712-1.286.347-.252.829-.379 1.447-.379.54 0 .97.083 1.292.25.322.165.567.444.736.836.168.392.265.909.29 1.55h2.286c-.015-1.18-.195-2.156-.54-2.932-.346-.776-.88-1.35-1.604-1.726C21.15.213 20.27 0 19.21 0c-.16 0-.28.006-.39.012H19.59h-.004zM0 .14v23.72h4.574v-9.4h5.327c1.327 0 2.422-.24 3.282-.72.862-.48 1.503-1.168 1.924-2.063.42-.897.63-1.958.63-3.185 0-1.22-.21-2.28-.63-3.177-.42-.897-1.062-1.584-1.924-2.064C12.322.77 11.227.528 9.9.528H0v-.387zm4.574 3.532H9.43c.838 0 1.49.19 1.959.569.468.38.703 1.01.703 1.889 0 .882-.235 1.512-.703 1.891-.47.38-1.12.569-1.959.569H4.574V3.672z"/></svg>
+          ResearchGate
+        </a>
+      </div>
+    </div>
+
+    <!-- Profile card -->
+    <div class="hero__card fade-in fade-in-delay-2">
+      <div class="hero__avatar" aria-hidden="true">KV</div>
+      <div class="hero__card-name">Kiran Veernapu</div>
+      <div class="hero__card-title">Engineering Delivery Manager · Intermountain Health</div>
+      <div class="hero__card-stats">
+        <div class="hero__stat">
+          <div class="hero__stat-num">25+</div>
+          <div class="hero__stat-label">Years Experience</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num">20+</div>
+          <div class="hero__stat-label">Publications</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num">$17M+</div>
+          <div class="hero__stat-label">Documented Savings</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num">65%</div>
+          <div class="hero__stat-label">Efficiency Gains</div>
+        </div>
+      </div>
+      <div class="hero__badges">
+        <div class="hero__badge">
+          <svg class="hero__badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          TITAN Health Awards Gold Winner
+        </div>
+        <div class="hero__badge">
+          <svg class="hero__badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          IEEE Technical Program Committee Member
+        </div>
+        <div class="hero__badge">
+          <svg class="hero__badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Keynote Speaker · Generative AI in Healthcare
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMPACT STRIP ===== -->
+<div class="impact-strip" aria-label="Key impact metrics">
+  <div class="container">
+    <div class="impact-grid">
+      <div class="impact-item fade-in">
+        <div class="impact-num">$17M+</div>
+        <div class="impact-desc">Cost savings through supply chain & operational AI</div>
+      </div>
+      <div class="impact-item fade-in fade-in-delay-1">
+        <div class="impact-num">65%</div>
+        <div class="impact-desc">Efficiency improvement in hospital supply workflows</div>
+      </div>
+      <div class="impact-item fade-in fade-in-delay-2">
+        <div class="impact-num">30%</div>
+        <div class="impact-desc">Reduction in clinical billing errors using deep learning</div>
+      </div>
+      <div class="impact-item fade-in fade-in-delay-3">
+        <div class="impact-num">2,000+</div>
+        <div class="impact-desc">Healthcare jobs optimized via AI-driven HR solutions</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">About</div>
+      <h2 class="section-title" id="about-title">25 years at the intersection of <em>AI and healing</em></h2>
+    </div>
+    <div class="about__grid">
+      <div>
+        <div class="about__body fade-in">
+          <p>Kiran Veernapu is an Engineering Delivery Manager and senior data architect at Intermountain Health, one of the nation's top nonprofit health systems. With over 25 years of experience, he leads AI-driven initiatives that improve clinical decision support, perioperative workflows, supply chain intelligence, and enterprise analytics.</p>
+          <p>His career began designing high-security automation systems for Indian military installations — translating defense-grade reliability into healthcare. Today, that same rigor shapes how he builds mission-critical AI platforms that clinicians and administrators depend on.</p>
+          <p>Kiran is a published author of 20+ peer-reviewed papers and book chapters spanning clinical AI, wearable health monitoring, healthcare fraud detection, and intelligent agronomy. He serves as a peer reviewer for Elsevier, Wiley, and Frontiers in Medicine, and sits on the Technical Program Committee for IEEE BigData 2026 and IEEE SoutheastCon 2026.</p>
+          <p>He is an invited keynote speaker on Generative AI in Clinical Documentation and Workflow Automation, and an active contributor to the EB-1A extraordinary ability space as a recognized international innovator.</p>
+        </div>
+        <div class="about__skills fade-in fade-in-delay-1">
+          <div class="about__skills-title">Core Expertise</div>
+          <div class="skills-grid">
+            <span class="skill-tag">Clinical Decision Support</span>
+            <span class="skill-tag">Generative AI</span>
+            <span class="skill-tag">Healthcare Analytics</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Oracle BI / ETL</span>
+            <span class="skill-tag">Predictive Analytics</span>
+            <span class="skill-tag">Supply Chain AI</span>
+            <span class="skill-tag">Wearable Health Monitoring</span>
+            <span class="skill-tag">Data Architecture</span>
+            <span class="skill-tag">Agentic AI</span>
+            <span class="skill-tag">FHIR / HL7</span>
+            <span class="skill-tag">Clinical Workflow Automation</span>
+            <span class="skill-tag">Enterprise Data Warehouses</span>
+          </div>
+        </div>
+
+        <div class="keynote-strip fade-in fade-in-delay-2">
+          <svg class="keynote-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <div class="keynote-text">
+            <strong>Keynote Speaker</strong>
+            "Generative AI in Clinical Documentation and Workflow Automation" — invited speaker at international healthcare technology conferences
+          </div>
+        </div>
+      </div>
+
+      <div class="about__sidebar">
+        <div class="about__role-card fade-in">
+          <div class="about__card-label">Current Role</div>
+          <div class="role-item">
+            <div class="edu-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="edu-content">
+              <div class="edu-degree">Engineering Delivery Manager</div>
+              <div class="edu-school">Intermountain Health · Salt Lake City, Utah</div>
+              <div class="edu-year">2015 – Present · 9+ years</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__edu-card fade-in fade-in-delay-1">
+          <div class="about__card-label">Education</div>
+          <div class="edu-item">
+            <div class="edu-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="edu-content">
+              <div class="edu-degree">Applied Data Science & AI</div>
+              <div class="edu-school">Brown University</div>
+              <div class="edu-year">2025</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="edu-content">
+              <div class="edu-degree">Masters in Management</div>
+              <div class="edu-school">Colorado Technical University</div>
+              <div class="edu-year">2024</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="edu-content">
+              <div class="edu-degree">Masters in Computer Science</div>
+              <div class="edu-school">Osmania University</div>
+              <div class="edu-year">1999</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="projects" id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title" id="projects-title">Innovations that <em>move healthcare forward</em></h2>
+      <p class="section-desc">Flagship AI and data engineering initiatives delivered at Intermountain Health and beyond.</p>
+    </div>
+    <div class="projects-grid">
+      <!-- Featured: Supply Chain AI -->
+      <div class="project-card project-card--featured fade-in">
+        <div class="project-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <div class="project-tag">Supply Chain · Oracle BI</div>
+        <h3 class="project-title">AI-Powered Kanban Inventory Intelligence</h3>
+        <p class="project-desc">Leveraged Oracle Business Intelligence tools to optimize Intermountain Health's award-winning Kanban two-bin inventory model. The system integrates real-time demand signals, AI-driven replenishment forecasting, and supply usage pattern analysis across clinical units. Featured in CEO quarterly review as a landmark efficiency initiative.</p>
+        <div class="project-impact">
+          <div class="impact-badge">$17M+ <span class="impact-badge-label">&nbsp;in savings</span></div>
+          <div class="impact-badge">65% <span class="impact-badge-label">&nbsp;efficiency gain</span></div>
+          <div class="impact-badge">Nurses <span class="impact-badge-label">&nbsp;supply reliability ↑</span></div>
+        </div>
+      </div>
+
+      <!-- Clinical Decision Support -->
+      <div class="project-card fade-in fade-in-delay-1">
+        <div class="project-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="project-tag">Clinical AI · CDS</div>
+        <h3 class="project-title">Clinical Decision Support Systems</h3>
+        <p class="project-desc">Designed and deployed AI-enabled CDS tools embedded in EHR workflows. Provides real-time risk assessment, diagnosis assistance, and treatment recommendations at the point of care — reducing adverse events and supporting evidence-based clinical decisions.</p>
+        <div class="project-impact">
+          <div class="impact-badge">Real-time <span class="impact-badge-label">&nbsp;risk scoring</span></div>
+          <div class="impact-badge">EHR <span class="impact-badge-label">&nbsp;integrated</span></div>
+        </div>
+      </div>
+
+      <!-- Employee Attrition Prediction -->
+      <div class="project-card fade-in fade-in-delay-1">
+        <div class="project-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="project-tag">HR Analytics · NLP</div>
+        <h3 class="project-title">AI-Driven Employee Attrition Prediction</h3>
+        <p class="project-desc">Built deep learning and NLP models to predict healthcare workforce attrition, enabling proactive retention strategies. Analyzed patient-outcome-linked workforce metrics to minimize turnover in high-acuity departments.</p>
+        <div class="project-impact">
+          <div class="impact-badge">2,000+ <span class="impact-badge-label">&nbsp;jobs optimized</span></div>
+        </div>
+      </div>
+
+      <!-- Healthcare Fraud Detection -->
+      <div class="project-card fade-in fade-in-delay-2">
+        <div class="project-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="project-tag">Deep Learning · Insurance</div>
+        <h3 class="project-title">Healthcare Fraud Detection Platform</h3>
+        <p class="project-desc">Applied deep learning models to detect insurance claim fraud patterns at scale. The system cross-references billing codes, provider networks, and temporal patterns to identify anomalies — reducing economic burden on public and private insurers.</p>
+        <div class="project-impact">
+          <div class="impact-badge">30% <span class="impact-badge-label">&nbsp;error reduction</span></div>
+        </div>
+      </div>
+
+      <!-- Perioperative Billing AI -->
+      <div class="project-card fade-in fade-in-delay-2">
+        <div class="project-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <div class="project-tag">Perioperative · AI</div>
+        <h3 class="project-title">Perioperative Inventory & Billing Intelligence</h3>
+        <p class="project-desc">Resolved complex perioperative inventory-patient billing challenges using AI and deep learning. Automated reconciliation of surgical supply usage against patient billing, dramatically reducing underbilling and compliance risk.</p>
+        <div class="project-impact">
+          <div class="impact-badge">Compliance <span class="impact-badge-label">&nbsp;risk ↓</span></div>
+        </div>
+      </div>
+
+      <!-- AI Telemedicine -->
+      <div class="project-card fade-in fade-in-delay-3">
+        <div class="project-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="project-tag">Telemedicine · Wearables</div>
+        <h3 class="project-title">AI-Enabled Telemedicine & Remote Monitoring</h3>
+        <p class="project-desc">Architected AI platforms integrating wearable device data streams for chronic disease management. Real-time biometric monitoring, predictive deterioration alerts, and remote patient engagement workflows.</p>
+        <div class="project-impact">
+          <div class="impact-badge">Chronic disease <span class="impact-badge-label">&nbsp;management</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PUBLICATIONS ===== -->
+<section class="publications" id="publications" aria-labelledby="pub-title">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Publications</div>
+      <h2 class="section-title" id="pub-title">Peer-reviewed <em>research & scholarship</em></h2>
+      <p class="section-desc">20+ published works spanning clinical AI, healthcare analytics, and intelligent systems. Available on <a href="https://scholar.google.com/citations?hl=en&user=wdrRBhYAAAAJ" target="_blank" rel="noopener" style="color: var(--color-primary);">Google Scholar</a> and <a href="https://www.researchgate.net/profile/Kiran-Veernapu" target="_blank" rel="noopener" style="color: var(--color-primary);">ResearchGate</a>.</p>
+    </div>
+
+    <div class="pub-filter fade-in" role="group" aria-label="Filter publications by type">
+      <button class="pub-filter-btn active" data-filter="all">All</button>
+      <button class="pub-filter-btn" data-filter="journal">Journal Articles</button>
+      <button class="pub-filter-btn" data-filter="book">Book Chapters</button>
+    </div>
+
+    <div class="pub-list">
+
+      <!-- 2026 -->
+      <div class="pub-item fade-in" data-type="book">
+        <div class="pub-year">2026</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--book">Book Chapter</div>
+          <div class="pub-title">Real-time AI in Clinical Decision Support: Bridging Research and Practice</div>
+          <div class="pub-journal">Revolutionizing Drug Research and Personalized Medicine Through AI and Machine Learning · IGI Global</div>
+          <div class="pub-authors">KK Veernapu, BK Patil, AS Tharayil, CL Sindhura, A Andy, A Budhewar, et al.</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item fade-in" data-type="journal">
+        <div class="pub-year">2026</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Conditional Tabular Generative Adversarial Network Based Clinical Data Augmentation for Enhanced Predictive Modeling in Chronic Kidney Disease Diagnosis</div>
+          <div class="pub-journal">BioMedInformatics, 6(1), 6</div>
+          <div class="pub-authors">P Randhawa, VN Jasthi, K Piyush, GK Kaushik, M Batamulay, SN Prasad, K Veernapu, et al.</div>
+        </div>
+        <a href="https://doi.org/10.3390/biomedinformatics6010006" target="_blank" rel="noopener" class="pub-link">
+          DOI
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+      <!-- 2025 -->
+      <div class="pub-item fade-in" data-type="journal">
+        <div class="pub-year">2025</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">An Overview of Artificial Intelligence-Driven Intelligent Agronomy for Sustainable Productivity and Agri-Finance Transformation</div>
+          <div class="pub-journal">ES Food and Agroforestry, 22, 1938</div>
+          <div class="pub-authors">K Redouane, Y Fikri, R Garine, S Nusrat, K Veernapu, M Batumalay, et al.</div>
+        </div>
+        <a href="https://dx.doi.org/10.30919/faf1938" target="_blank" rel="noopener" class="pub-link">
+          DOI
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+      <div class="pub-item fade-in" data-type="journal">
+        <div class="pub-year">2025</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Artificial Intelligence-Based Forecasting and Supply Optimization Network Using Hybrid Deep Learning for Sustainable Food Systems</div>
+          <div class="pub-journal">ES Food and Agroforestry, 22, 1936</div>
+          <div class="pub-authors">K Redouane, Y Fikri, M Sankaran, R Garine, K Veernapu, S Vaz, et al.</div>
+        </div>
+        <a href="https://doi.org/10.31080/ASCS.2025.07.0595" target="_blank" rel="noopener" class="pub-link">
+          DOI
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+      <div class="pub-item fade-in" data-type="journal">
+        <div class="pub-year">2025</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Deep Learning in Detecting Healthcare Fraud: The Economic Burden on Public and Private Insurers</div>
+          <div class="pub-journal">International Journal of Core Engineering & Management, 8(1)</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <!-- Initially hidden — shown when "Show More" clicked -->
+      <div class="pub-item pub-hidden fade-in" data-type="book">
+        <div class="pub-year">2025</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--book">Book Chapter</div>
+          <div class="pub-title">Revolutionizing Drug Research and Personalized Medicine Through AI and Machine Learning</div>
+          <div class="pub-journal">IGI Global</div>
+          <div class="pub-authors">A Andy, AS Tharayil, A Budhewar, K Veernapu, et al.</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2024</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">AI-Enabled Telemedicine: Revolutionizing Chronic Disease Management with Remote Patient Monitoring Technologies</div>
+          <div class="pub-journal">International Journal for Multidisciplinary Research, 6(1)</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2024</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">AI-Driven Diagnostics for Retinal Disorders and Eye Diseases: Transforming Ophthalmology</div>
+          <div class="pub-journal">Journal of Artificial Intelligence, Machine Learning and Data Science, 2(4)</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2024</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Harnessing AI and Data Science to Address and Mitigate Health Inequities</div>
+          <div class="pub-journal">Journal of Artificial Intelligence, Machine Learning and Data Science, 2(4)</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2024</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">AI Enhanced Data Quality in Data Warehouses and Data Lakes for Efficient Data-Driven Intelligence</div>
+          <div class="pub-journal">International Scientific Journal of Engineering and Management, 3(7), 1–7</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2024</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">The Role of Wearable Devices in Chronic Disease Management: A Review of Current AI and ML Applications and Future Directions</div>
+          <div class="pub-journal">IJLRP – International Journal of Leading Research Publication, 5(4)</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2023</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">The Implementation of AI in Clinical Decision Support System: Effects on Patient Outcomes and Operational Costs</div>
+          <div class="pub-journal">International Journal of Multidisciplinary Research and Growth Evaluation, 5(5)</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2023</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Combining AI and Blockchain to Improve Clarity, Tracking, and Security in Healthcare Supply Chains</div>
+          <div class="pub-journal">International Scientific Journal of Engineering and Management, 2(7)</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2023</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">AI Algorithms and Healthcare Scheduling: Exploring Their Potential to Address Workforce Shortages and Improve Care Quality</div>
+          <div class="pub-journal">Progress in Medical Sciences, 3(7), 1–4</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2023</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Streamlining the Recruitment Process in Healthcare with Artificial Intelligence</div>
+          <div class="pub-journal">IJLRP – International Journal of Leading Research Publication, 4(1)</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2022</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Predicting Employee Attrition in Healthcare Using AI Models, Deep Learning and Natural Language Processing</div>
+          <div class="pub-journal">Progress in Medical Sciences, 6(6), 1–4</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2022</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Artificial Intelligence in Processing Medical Insurance Claims: Generating Claim Denial Letters with Deep Learning and NLP Algorithms</div>
+          <div class="pub-journal">International Journal of Multidisciplinary Research and Growth Evaluation, 3</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2022</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Resolving Perioperative Inventory Patient Billing Challenges Using AI and Deep Learning</div>
+          <div class="pub-journal">IJLRP – International Journal of Leading Research Publication, 3(4)</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2020</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Oracle ETL Tools and AI Integration: New Data Management Approach</div>
+          <div class="pub-journal">International Journal of Multidisciplinary Research and Growth Evaluation, 1</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="pub-item pub-hidden fade-in" data-type="journal">
+        <div class="pub-year">2020</div>
+        <div class="pub-content">
+          <div class="pub-type pub-type--journal">Journal Article</div>
+          <div class="pub-title">Advancing Healthcare through Data Processing: A Technical Review of Tools, Challenges, and Innovations</div>
+          <div class="pub-journal">IJLRP – International Journal of Leading Research Publication, 1(8)</div>
+          <div class="pub-authors">K Veernapu</div>
+        </div>
+        <div></div>
+      </div>
+
+    </div>
+
+    <div class="pub-show-more fade-in">
+      <button class="btn-ghost" id="show-more-btn">
+        Show All Publications
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AWARDS ===== -->
+<section class="awards" id="awards" aria-labelledby="awards-title">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Recognition</div>
+      <h2 class="section-title" id="awards-title">Awards &amp; <em>professional service</em></h2>
+      <p class="section-desc">International recognition for innovation, excellence, and contributions to healthcare AI.</p>
+    </div>
+
+    <div class="awards-grid">
+      <div class="award-card fade-in">
+        <div class="award-icon">🏆</div>
+        <div class="award-content">
+          <div class="award-name">TITAN Health Awards — Gold Winner</div>
+          <div class="award-org">TITAN Business Awards</div>
+          <div class="award-desc">Gold award recognizing outstanding innovation in healthcare technology and AI-driven solutions that deliver measurable clinical and operational impact.</div>
+        </div>
+      </div>
+      <div class="award-card fade-in fade-in-delay-1">
+        <div class="award-icon">🌍</div>
+        <div class="award-content">
+          <div class="award-name">International Outstanding Innovation Award in AI in Healthcare</div>
+          <div class="award-org">Global Recognition Awards</div>
+          <div class="award-desc">International recognition for pioneering AI and data-driven systems that improve patient outcomes and have generated millions of dollars in documented cost savings.</div>
+        </div>
+      </div>
+      <div class="award-card fade-in fade-in-delay-1">
+        <div class="award-icon">📄</div>
+        <div class="award-content">
+          <div class="award-name">Best Paper Award</div>
+          <div class="award-org">IEEE International Conference</div>
+          <div class="award-desc">Awarded for outstanding contribution in AI research presented at an IEEE conference, recognized for scientific rigor and practical healthcare application.</div>
+        </div>
+      </div>
+      <div class="award-card fade-in fade-in-delay-2">
+        <div class="award-icon">🔬</div>
+        <div class="award-content">
+          <div class="award-name">Peer Reviewer Recognition</div>
+          <div class="award-org">Elsevier · Wiley · Frontiers in Medicine</div>
+          <div class="award-desc">Invited as a peer reviewer for leading scientific publishers, contributing to quality assurance of published research in healthcare AI and informatics.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Service -->
+    <div class="section-header fade-in" style="margin-top: var(--space-16); margin-bottom: var(--space-8);">
+      <div class="section-label">Service</div>
+      <h3 class="section-title" style="font-size: var(--text-xl);">Professional <em>service & committee roles</em></h3>
+    </div>
+    <div class="service-grid">
+      <div class="service-card fade-in">
+        <div class="service-role">Technical Program Committee Member</div>
+        <div class="service-org">IEEE BigData Conference</div>
+        <div class="service-year">2026</div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-1">
+        <div class="service-role">Technical Program Committee Member</div>
+        <div class="service-org">IEEE SoutheastCon</div>
+        <div class="service-year">2026</div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-1">
+        <div class="service-role">Reviewer</div>
+        <div class="service-org">AMIA Annual Symposium</div>
+        <div class="service-year">2025–2026</div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-2">
+        <div class="service-role">Reviewer</div>
+        <div class="service-org">Metascience Novelty Indicators Challenge</div>
+        <div class="service-year">2025</div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-2">
+        <div class="service-role">Peer Reviewer</div>
+        <div class="service-org">Elsevier Journals</div>
+        <div class="service-year">Ongoing</div>
+      </div>
+      <div class="service-card fade-in fade-in-delay-3">
+        <div class="service-role">Peer Reviewer</div>
+        <div class="service-org">Wiley · Frontiers in Medicine</div>
+        <div class="service-year">Ongoing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MEDIA ===== -->
+<section class="media-section" id="media" aria-labelledby="media-title">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Media</div>
+      <h2 class="section-title" id="media-title">Featured in <em>major publications</em></h2>
+      <p class="section-desc">Independent coverage in major media and trade publications recognizing Kiran's contributions to healthcare AI and digital transformation.</p>
+    </div>
+    <div class="media-grid">
+      <a class="media-card fade-in" href="https://usawire.com/technologist-journey-defence-to-healthcare-digital-systems/" target="_blank" rel="noopener">
+        <div class="media-outlet">USA Wire</div>
+        <div class="media-headline">From Defence Gates to Operating Rooms: A Technologist's Journey Designing High-Impact Digital Systems</div>
+        <div class="media-link">Read article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+      </a>
+      <a class="media-card fade-in fade-in-delay-1" href="https://news24online.com/information/healthcare-data-as-critical-infrastructure-hospitals/732872/" target="_blank" rel="noopener">
+        <div class="media-outlet">News24 Online</div>
+        <div class="media-headline">The Future of Healthcare Runs on Data: A 24-Year Technologist's Blueprint for Smarter Hospitals</div>
+        <div class="media-link">Read article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+      </a>
+      <a class="media-card fade-in fade-in-delay-1" href="https://www.outlookindia.com/hub4business/kiran-veernapu-from-manual-to-ai-driventhe-digital-transformation-of-hr-finance-and-supply-chain" target="_blank" rel="noopener">
+        <div class="media-outlet">Outlook India</div>
+        <div class="media-headline">Kiran Veernapu — From Manual to AI-Driven: The Digital Transformation of HR, Finance and Supply Chain</div>
+        <div class="media-link">Read article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+      </a>
+      <a class="media-card fade-in fade-in-delay-2" href="https://www.mid-day.com/buzz/article/leveraging-ai-for-patient-monitoring-the-next-step-in-smart-hospitals-by-kiran-veernapu-4787" target="_blank" rel="noopener">
+        <div class="media-outlet">Mid-Day</div>
+        <div class="media-headline">Leveraging AI for Patient Monitoring: The Next Step in Smart Hospitals</div>
+        <div class="media-link">Read article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+      </a>
+      <a class="media-card fade-in fade-in-delay-2" href="https://www.thehansindia.com/amp/news/business/data-driven-decision-makingthe-role-of-ai-in-process-optimization-by-kiran-veernapu-967669" target="_blank" rel="noopener">
+        <div class="media-outlet">The Hans India</div>
+        <div class="media-headline">Data-Driven Decision Making: The Role of AI in Process Optimization</div>
+        <div class="media-link">Read article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+      </a>
+      <div class="media-card fade-in fade-in-delay-3" style="border-style: dashed; justify-content: center; align-items: center; text-align: center; gap: var(--space-2); opacity: 0.6;">
+        <div class="media-outlet" style="text-align: center;">Also featured in</div>
+        <div class="media-headline" style="color: var(--color-text-muted); font-weight: 400; font-size: var(--text-xs);">MSN · OneIndia · Mid-Day · YPredict and additional syndicated coverage</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title" id="contact-title">Start a <em>conversation</em></h2>
+      <p class="section-desc">Open to speaking invitations, research collaborations, editorial opportunities, and professional dialogue in healthcare AI.</p>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__info fade-in">
+        <p>Whether you're interested in AI innovation in healthcare, exploring collaboration opportunities, or looking for a keynote speaker — reach out directly.</p>
+        <div class="contact-links">
+          <a href="mailto:kiran_veernapu@yahoo.com" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">kiran_veernapu@yahoo.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/kiran-veernapu-871a757/" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">kiran-veernapu-871a757</div>
+            </div>
+          </a>
+          <a href="https://scholar.google.com/citations?hl=en&user=wdrRBhYAAAAJ" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5L12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+            </div>
+            <div>
+              <div class="contact-link-label">Google Scholar</div>
+              <div class="contact-link-value">View Publications</div>
+            </div>
+          </a>
+          <a href="https://kiranveernapu.com/KiranVeernapu%20Resume.pdf" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div>
+              <div class="contact-link-label">Curriculum Vitae</div>
+              <div class="contact-link-value">Download full CV (PDF)</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact__form fade-in fade-in-delay-1" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="cf-name">Name</label>
+            <input class="form-input" id="cf-name" type="text" placeholder="Your name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-email">Email</label>
+            <input class="form-input" id="cf-email" type="email" placeholder="your@email.com" required autocomplete="email">
+          </div>
+        </div>
+        <div class="form-group form-select-group">
+          <label class="form-label" for="cf-reason">Reason for reaching out</label>
+          <select class="form-select" id="cf-reason">
+            <option value="">Select a topic…</option>
+            <option value="speaking">Speaking / Keynote Invitation</option>
+            <option value="research">Research Collaboration</option>
+            <option value="editorial">Editorial / Peer Review Opportunity</option>
+            <option value="consulting">Healthcare AI Consulting</option>
+            <option value="media">Media / Press Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-message">Message</label>
+          <textarea class="form-textarea" id="cf-message" placeholder="Tell me about your project, question, or opportunity…" required></textarea>
+        </div>
         <div>
-          <div class="eyebrow">AI • Healthcare Automation • Clinical Systems</div>
-          <h1>Kiran Veernapu</h1>
-          <div class="subtitle">
-            Technology leader focused on artificial intelligence, clinical decision intelligence, healthcare analytics, and enterprise-scale digital transformation.
-          </div>
-          <p>
-            Kiran Veernapu is a senior technology leader with more than 25 years of experience building data-driven systems across healthcare and enterprise environments. His work centers on AI-enabled solutions that improve patient outcomes, strengthen clinical workflows, optimize operations, and translate advanced analytics into measurable real-world impact.
-          </p>
-          <div class="button-row">
-            <a class="btn primary" href="#research">View Research</a>
-            <a class="btn secondary" href="#experience">Professional Experience</a>
-            <a class="btn secondary" href="#contact">Contact</a>
-          </div>
+          <button type="submit" class="form-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
         </div>
-
-        <div class="hero-card">
-          <img class="photo" src="IMG_1155 - Copy.jpg" alt="Professional portrait placeholder for Kiran Veernapu" />
-          <div class="photo-note">Kiran Veernapu</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="metrics">
-          <div class="metric">
-            <div class="value">$1M+</div>
-            <div>Annual cost savings delivered through enterprise healthcare initiatives.</div>
-          </div>
-          <div class="metric">
-            <div class="value">50–65%</div>
-            <div>Operational efficiency improvements across targeted workflows and systems.</div>
-          </div>
-          <div class="metric">
-            <div class="value">25+</div>
-            <div>Research publications, conference papers, and scholarly contributions.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <h2 class="section-title">About</h2>
-        <p class="section-intro">
-          Kiran Veernapu works at the intersection of advanced technology and practical healthcare transformation. His profile combines enterprise delivery leadership, scholarly contribution, professional service, and measurable innovation in real-world systems.
-        </p>
-        <div class="grid-2">
-          <div class="card">
-            <h3>Professional Focus</h3>
-            <ul class="clean highlight-list">
-              <li>Artificial intelligence in healthcare operations and decision support</li>
-              <li>Clinical workflow optimization and perioperative systems</li>
-              <li>Enterprise analytics, data integration, and intelligence platforms</li>
-              <li>Digital transformation across large-scale healthcare environments</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Academic & Professional Identity</h3>
-            <p>
-              His work bridges implementation and scholarship, combining hands-on leadership with publications, peer review, conference service, and broader visibility in healthcare AI and informatics.
-            </p>
-            <p>
-              This blend of operational impact and field-level engagement supports collaborations across academia, industry, and conference communities.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="research">
-      <div class="container">
-        <h2 class="section-title">Research & Innovation Focus</h2>
-        <p class="section-intro">
-          Core themes across Kiran’s scholarly and applied work include the design of intelligent systems that support patient care, health operations, and data-driven decision making.
-        </p>
-        <div class="grid-2">
-          <div class="card">
-            <h3>Primary Areas</h3>
-            <ul class="clean">
-              <li>Artificial Intelligence in Healthcare</li>
-              <li>Clinical Decision Support Systems</li>
-              <li>Wearable Health Monitoring and Bioinformatics</li>
-              <li>Healthcare Supply Chain Optimization</li>
-              <li>Enterprise Data Integration and Analytics</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Selected Scholarly Themes</h3>
-            <ul class="clean">
-              <li>AI-enabled telemedicine and remote monitoring</li>
-              <li>Predictive analytics for clinical and operational workflows</li>
-              <li>Perioperative inventory and billing intelligence</li>
-              <li>Smart hospital systems and real-time decision support</li>
-            </ul>
-            <p><strong>Research:</strong><a href="https://scholar.google.com/citations?hl=en&user=wdrRBhYAAAAJ"> Google Scholar</a> • <a href="KiranVeernapu Resume.pdf">CV PDF</a> </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="education">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="card">
-          <ul class="clean">
-            <li>Masters in Computer Science, Osmania University, 1999</li>
-            <li>Masters in Management, Colorado Technical University, 2024</li>
-            <li>Applied Data Science, and AI, Brown University, 2025</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <section class="section" id="experience">
-      <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="card">
-          <div class="experience-role">Engineering Delivery Manager</div>
-          <div class="org">Intermountain Health, United States</div>
-          <p>
-            Leads enterprise AI-driven initiatives designed to improve clinical support systems, optimize perioperative and supply chain workflows, and strengthen organizational decision intelligence.
-          </p>
-          <ul class="clean">
-            <li>Directed high-impact healthcare transformation initiatives with measurable operational value</li>
-            <li>Delivered substantial cost savings and efficiency improvements in enterprise environments</li>
-            <li>Contributed to scalable analytics and decision systems supporting patient care and operational integrity</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="recognition">
-      <div class="container">
-        <h2 class="section-title">Recognition & Professional Service</h2>
-        <div class="grid-2">
-          <div class="card">
-            <h3>Professional Service</h3>
-            <ul class="clean">
-              <li>Technical Program Committee Member – IEEE BigData 2026</li>
-              <li>Technical Program Committee Member – IEEE SoutheastCon 2026</li>
-              <li>Reviewer – AMIA, Metascience Novelty Indicators Challenge</li>
-              <li>Peer Reviewer – Elsevier, Wiley, Frontiers in Medicine</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Awards & Distinctions</h3>
-            <ul class="clean">
-              <li>TITAN Health Awards – Gold Winner</li>
-              <li>Global Recognition Award</li>
-              <li>IEEE Conference Best Paper Award</li>
-              <li>Conference and scholarly recognition in AI and healthcare innovation</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="media">
-      <div class="container">
-        <h2 class="section-title">Media & Public Presence</h2>
-        <p class="section-intro">
-          Kiran’s work in AI-driven healthcare systems and digital transformation has been featured in independent media platforms and professional visibility channels.
-        </p>
-        <ul class="media-list">
-          <li><a href="">MSN</a></li>
-          <li><a href="https://www.outlookindia.com/hub4business/kiran-veernapu-from-manual-to-ai-driventhe-digital-transformation-of-hr-finance-and-supply-chain">Outlook India</a></li>
-          <li><a href="https://www.mid-day.com/buzz/article/leveraging-ai-for-patient-monitoring-the-next-step-in-smart-hospitals-by-kiran-veernapu-4787">Mid-Day</a></li>
-          <li><a href="">OneIndia</a></li>
-          <li><a href="https://www.thehansindia.com/amp/news/business/data-driven-decision-makingthe-role-of-ai-in-process-optimization-by-kiran-veernapu-967669">The Hans India</a></li>
-          <li><a href="https://usawire.com/technologist-journey-defence-to-healthcare-digital-systems/">US Wire</a></li>
-          <li><a href="https://news24online.com/information/healthcare-data-as-critical-infrastructure-hospitals/732872/">New24 Online</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container contact-box">
-        <div class="card">
-          <h2 class="section-title" style="margin-top:0;">Connect & Collaborate</h2>
-          <p>
-            Kiran is open to academic collaboration, conference participation, research, and professional dialogue in healthcare AI, analytics, and intelligent systems.
-          </p>
-          <p>
-            For speaking invitations, conference collaboration, editorial opportunities, or research partnerships, please use the contact channels on the right.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Contact</h3>
-          <ul class="clean">
-            <li><strong>Email:</strong>kiran_veernapu@yahoo.com</li>
-            <li><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/kiran-veernapu-871a757/">https://www.linkedin.com/in/kiran-veernapu-871a757/</a></li>
-            <li><strong>Google Scholar:</strong><a href="https://scholar.google.com/citations?hl=en&user=wdrRBhYAAAAJ">https://scholar.google.com/citations?hl=en&user=wdrRBhYAAAAJ</a></li>
-            <li><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Kiran-Veernapu?ev=prf_overview">https://www.researchgate.net/profile/Kiran-Veernapu?ev=prf_overview</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      © 2026 Kiran Veernapu. All rights reserved.
+        <div id="form-success" role="status">Message sent — thank you! I'll be in touch shortly.</div>
+      </form>
     </div>
-  </footer>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__copy">© 2026 Kiran Veernapu. All rights reserved.</div>
+    <div class="footer__links">
+      <a href="https://www.linkedin.com/in/kiran-veernapu-871a757/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=wdrRBhYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://www.researchgate.net/profile/Kiran-Veernapu" target="_blank" rel="noopener">ResearchGate</a>
+      <a href="https://kiranveernapu.com/KiranVeernapu%20Resume.pdf" target="_blank" rel="noopener">CV</a>
+    </div>
+    <div class="footer__attribution">
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== DARK MODE TOGGLE =====
+(function(){
+  const t = document.querySelector('[data-theme-toggle]');
+  const r = document.documentElement;
+  let d = r.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+  r.setAttribute('data-theme', d);
+  function updateIcon() {
+    if (!t) return;
+    t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
+    t.innerHTML = d === 'dark'
+      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  }
+  updateIcon();
+  if (t) t.addEventListener('click', () => {
+    d = d === 'dark' ? 'light' : 'dark';
+    r.setAttribute('data-theme', d);
+    updateIcon();
+  });
+})();
+
+// ===== NAV SCROLL =====
+(function(){
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+})();
+
+// ===== MOBILE MENU =====
+(function(){
+  const toggle = document.getElementById('mobile-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (!toggle || !menu) return;
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => menu.classList.remove('open'));
+  });
+})();
+
+// ===== SCROLL ANIMATIONS =====
+(function(){
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+})();
+
+// ===== PUBLICATION FILTER =====
+(function(){
+  const btns = document.querySelectorAll('.pub-filter-btn');
+  const items = document.querySelectorAll('.pub-list .pub-item');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+      items.forEach(item => {
+        const type = item.getAttribute('data-type');
+        const hidden = item.classList.contains('pub-hidden');
+        if (filter === 'all') {
+          item.style.display = hidden ? 'none' : '';
+        } else {
+          item.style.display = (type === filter && !hidden) ? '' : 'none';
+        }
+      });
+    });
+  });
+})();
+
+// ===== SHOW MORE PUBLICATIONS =====
+(function(){
+  const btn = document.getElementById('show-more-btn');
+  if (!btn) return;
+  let expanded = false;
+  btn.addEventListener('click', () => {
+    expanded = !expanded;
+    document.querySelectorAll('.pub-hidden').forEach(item => {
+      item.classList.toggle('pub-hidden', !expanded);
+      item.style.display = '';
+    });
+    btn.innerHTML = expanded
+      ? 'Show Fewer <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>'
+      : 'Show All Publications <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+  });
+})();
+
+// ===== CONTACT FORM =====
+(function(){
+  const form = document.getElementById('contact-form');
+  const success = document.getElementById('form-success');
+  if (!form) return;
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('cf-name').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const msg = document.getElementById('cf-message').value.trim();
+    if (!name || !email || !msg) return;
+    // Simulate submission feedback
+    success.style.display = 'block';
+    form.querySelectorAll('input, textarea, select, button[type="submit"]').forEach(el => el.setAttribute('disabled', true));
+    setTimeout(() => { success.style.display = 'none'; form.reset(); form.querySelectorAll('[disabled]').forEach(el => el.removeAttribute('disabled')); }, 6000);
+  });
+})();
+</script>
 </body>
 </html>
